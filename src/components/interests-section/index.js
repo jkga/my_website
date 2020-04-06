@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Container, Divider, Segment, Grid} from 'semantic-ui-react'
+import { Header, Container, Divider, Segment, Grid, Responsive} from 'semantic-ui-react'
 import './style.css'
 export default () => {
   return (
@@ -12,7 +12,7 @@ export default () => {
       </Header>
       <Container style={{display: 'flex', textAlign: 'center', justifyContent: 'center', margin: 100}}>
       <Segment style={{border: 'none', boxShadow: 'none'}}>
-        <Grid columns={2} relaxed='very'>
+        <Grid doubling columns={2}>
           <Grid.Column>
               <div className='interests-sprite arduino'/>
             <p>
