@@ -1,0 +1,31 @@
+.bg-sprite {
+  background: url("assets/img/bg-sprite.png") no-repeat;
+}
+
+.bg-sprite.x {
+  width: 300px; /* Icon width */
+  height: 200px; /* Icon height */
+  display: inline-block; /* Display icon as inline block */
+  background-position: -500px -30px; /* Icon background position in sprite */
+  transform: scale(0.3);
+}
+
+.bg-sprite.arrow-forward {
+  width: 300px; /* Icon width */
+  height: 200px; /* Icon height */
+  display: inline-block; /* Display icon as inline block */
+  background-position: 0px -250px; /* Icon background position in sprite */
+  transform: scale(0.3);
+}
+
+.bg-sprite.half-circle {
+  width: 400px; /* Icon width */
+  height: 500px; /* Icon height */
+  display: inline-block; /* Display icon as inline block */
+  background-position: -800px -20px; /* Icon background position in sprite */
+  transform: scale(0.5);
+}
+
+.bg-sprite.half-circle.deg45 {
+  transform:rotate(-45deg) scale(0.35);
+}

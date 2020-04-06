@@ -1,0 +1,43 @@
+header {
+  text-align: center;
+  height: 800px;
+  padding: 5%;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: -5vh;
+  bottom: 0;
+  left: -5%;
+  right: 0%;
+  width: 110%;
+  height: 750px;
+  border-bottom: 1px solid rgba(60,60,60, 0.3);
+  transform: rotate(-3deg);
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* icons */
+.header-x-backgound {
+  position: absolute;
+  top: 50px;
+  right: 15vw;
+  z-index: -1;
+}
+
+.header-arrow-forward-background {
+  position: absolute;
+  top: 300px;
+  left: -50px;
+  z-index: -1;
+}
+
+.header-half-circle-background {
+  position: absolute;
+  top: 10vh;
+  right: -25vh;
+  z-index: -1;
+}

@@ -1,0 +1,35 @@
+.interests-sprite {
+  background: url("assets/img/interests.png") no-repeat;
+  transform: scale(0.7);
+}
+
+.interests-sprite.arduino {
+  width: 460px; /* Icon width */
+  height: 200px; /* Icon height */
+  display: inline-block; /* Display icon as inline block */
+  background-position: 0px 0px; /* Icon background position in sprite */
+}
+
+
+.interests-sprite.ne555 {
+  width: 200px; /* Icon width */
+  height: 200px; /* Icon height */
+  display: inline-block; /* Display icon as inline block */
+  background-position: -470px 0px; /* Icon background position in sprite */
+}
+
+
+.interests-sprite.guitar {
+  width: 260px; /* Icon width */
+  height: 200px; /* Icon height */
+  display: inline-block; /* Display icon as inline block */
+  background-position: 0px -200px; /* Icon background position in sprite */
+}
+
+.interests-sprite.foss{
+  width: 200px; /* Icon width */
+  height: 200px; /* Icon height */
+  display: inline-block; /* Display icon as inline block */
+  background-position: -300px -200px; /* Icon background position in sprite */
+}
+

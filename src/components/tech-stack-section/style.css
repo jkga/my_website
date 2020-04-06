@@ -1,0 +1,18 @@
+.cert-sprite {
+  background: url("assets/img/certs.png") no-repeat;
+  transform: scale(0.5);
+}
+
+.cert-sprite.itilv4 {
+  width: 340px; /* Icon width */
+  height: 160px; /* Icon height */
+  display: inline-block; /* Display icon as inline block */
+  background-position: 0px 0px; /* Icon background position in sprite */
+}
+
+.cert-sprite.tesda {
+  width: 170px; /* Icon width */
+  height: 200px; /* Icon height */
+  display: inline-block; /* Display icon as inline block */
+  background-position: -340px 0px; /* Icon background position in sprite */
+}

@@ -1,0 +1,9 @@
+.bar {
+  width: 20px;
+  height: 10px;
+  max-height: 40px;
+  min-height: 5px;
+  background: red;
+  border: 1px solid #fff;
+  transition: all 0.2s ease-in-out;
+}
