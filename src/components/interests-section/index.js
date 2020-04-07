@@ -24,28 +24,38 @@ export default () => {
             <Grid.Column>
                 <div className='interests-sprite arduino'/>
               <p>
-                <span style={{color: 'rgb(0, 150, 136)'}}>Internet of things (IOT)</span> Aenean commodo ligula eget dolor.
-                Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes
-                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu
+                <span style={{color: 'rgb(0, 150, 136)'}}>Internet of things (IOT) </span> 
+                During my free time, I used to make some cool stuff with my arduino and esp8266.
+                With a cheap boards and micro-controllers, It's never been easier to control various electronic devices
+                using our laptop or smart phone.
               </p>
             </Grid.Column>
             <Grid.Column>
               <div className='interests-sprite foss'/>
               <p>
-                <span style={{color: 'rgb(0, 150, 136)'}}>Free and Open Source Software (FOSS)</span> adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, 
+                <span style={{color: 'rgb(0, 150, 136)'}}>Free and Open Source Software (FOSS).</span>
+                If time permits, I try my best to contribute something on the community by creating an open source
+                software/programs which I usually upload to my github account. It's not big, but I hope it to be great.
               </p>
             </Grid.Column>
 
             <Grid.Column>
               <div className='interests-sprite ne555'/>
               <p>
-                <span style={{color: 'rgb(0, 150, 136)'}}>Electronics</span> Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, 
+                <span style={{color: 'rgb(0, 150, 136)'}}>Electronics.</span>&nbsp;
+                The technology we have today is a major upgrade of what we had from the past. An analog television, cassette tapes, and candles stick telephones
+                are just a piece of artworks that you might have on your precious collection. But whats really interesting is the more it becomes older, the more the cooler it could be.
+                And it is one of the thing I love on studying electronics. Do you think this 555 IC Timer is cool? Definitely!
               </p>
             </Grid.Column>
             <Grid.Column>
               <div className='interests-sprite guitar'/>
               <p>
-                <span style={{color: 'rgb(0, 150, 136)'}}>Music Rocks</span> adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, 
+                <span style={{color: 'rgb(0, 150, 136)'}}>Music Rocks.</span>
+                Oooh YeahhH!! Did I say rock ? Yes. Music really rocks but to tell you honestly, I am not
+                a fan of rock music. I prefer romantic songs, it really soothes my heart and ear. I love those 
+                vibrations that are calm and silent, but could hit one soul even with just a single tone.
+
               </p>
             </Grid.Column>
           </Grid.Row>
