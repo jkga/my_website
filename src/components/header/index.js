@@ -8,10 +8,10 @@ export default () => {
     <Responsive>
       <header>
         <Header as='h1' icon textAlign='center'>
-          <Image src={Motor} style={{width: 200}}/>
+          <Image src={Motor} style={{width: 200}} className='header-main-image'/>
             <Header.Content>.dev/jkga</Header.Content>
             <Header.Subheader>
-              Hola! I am <span style={{color: '#e91e63'}}>Ken</span>, a fullstack web developer
+              <b>Hola!</b> I am <span style={{color: '#e91e63'}}>Ken</span>, a fullstack web developer
               working on various applications and information systems.<br/>
               Thank you for spending your time visiting my humble website! Just keep scrolling, <br/>
               don't worry I have a lot of things to tell you

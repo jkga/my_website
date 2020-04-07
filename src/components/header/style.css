@@ -1,6 +1,6 @@
 header {
   text-align: center;
-  height: 800px;
+  height: 700px;
   padding: 5%;
   position: relative;
 }
@@ -13,7 +13,7 @@ header::after {
   left: -5%;
   right: 0%;
   width: 110%;
-  height: 750px;
+  height: 700px;
   border-bottom: 1px solid rgba(60,60,60, 0.3);
   transform: rotate(-3deg);
   z-index: -1;
@@ -41,3 +41,52 @@ header::after {
   right: -25vh;
   z-index: -1;
 }
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .header-x-backgound {
+    right: -5vh;
+  }
+
+  .header-arrow-forward-background {
+    left: -10vh;
+    top: 55vh;
+  }
+
+  .header-main-image {
+    margin-top: 30px !important;
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .header-half-circle-background {
+    right: -28vh;
+    opacity: 0.2;
+  }
+
+  .header-x-backgound {
+    right: -15vh;
+    opacity: 0.1;
+  }
+  
+  .header-arrow-forward-background {
+    left: -20vh;
+    top: 40vh;
+    opacity: 0.2;
+  }
+
+  .header-main-image {
+    width: 150px !important;
+    margin-top: 30px !important;
+  }
+  
+}
+

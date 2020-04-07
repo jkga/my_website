@@ -8,11 +8,11 @@ export default () => {
       <Header as='h1' icon textAlign='center'>
         <Header.Content>Tech & Certs</Header.Content>
       </Header>
-      <Divider horizontal>Technology Stacks and <span style={{color: '#e91e63'}}>acquired certificates</span></Divider>
+      <Divider horizontal>Tech-Stacks and <span style={{color: '#e91e63'}}>certificates</span></Divider>
       
        <Grid doubling columns={2} style={{marginTop: '4em'}}>
         <Grid.Column>
-          <Segment style={{padding: '10%'}}>
+          <Segment style={{padding: '10%', textAlign: 'center'}}>
             <Header as='h3' icon textAlign='center'>
               <Header.Content>Technology Stacks</Header.Content>
               <Header.Subheader>
@@ -20,7 +20,7 @@ export default () => {
               </Header.Subheader>
             </Header>
 
-            <Image src={Techs} style={{width: '80%', minWidth: '250px', margin: '10%'}}/>
+            <Image src={Techs} style={{width: '80%', margin: '10%'}}/>
            
             <p>
               <span style={{color: 'rgb(0, 150, 136)'}}>ITILv4 Foundation</span>
@@ -35,7 +35,7 @@ export default () => {
           </Segment>
         </Grid.Column>
         
-        <Grid.Column style={{padding: 20, marginTop: 50}}>
+        <Grid.Column style={{padding: 20, marginTop: 50, textAlign: 'center'}}>
             <Header as='h3' icon textAlign='center'>
               <Header.Content>Information Technology Infrastructure Library</Header.Content>
               <Header.Subheader>

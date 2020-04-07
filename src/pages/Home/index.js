@@ -1,20 +1,23 @@
-import React from 'react'
+import React, {Suspense} from 'react'
 import { Responsive } from 'semantic-ui-react'
-import HeaderMenu from '../../components/main-menu'
 import Header from '../../components/header'
-import TechStack from '../../components/tech-stack-section'
-import Feedback from '../../components/feedback-section'
-import Interest from '../../components/interests-section'
 import './style.css'
+
+const HeaderMenu = React.lazy(() => import('../../components/main-menu'));
+const TechStack = React.lazy(() => import('../../components/tech-stack-section'));
+const Feedback = React.lazy(() => import('../../components/feedback-section'));
+const Interest = React.lazy(() => import('../../components/interests-section'));
 
 export default () => {
   return (
     <Responsive>
-      <HeaderMenu></HeaderMenu>
-      <Header></Header>
-      <TechStack></TechStack>
-      <Feedback></Feedback>
-      <Interest></Interest>
+      <Suspense fallback={<div>...</div>}>
+        <HeaderMenu></HeaderMenu>
+        <Header></Header>
+        <TechStack></TechStack>
+        <Feedback></Feedback>
+        <Interest></Interest>
+      </Suspense>
     </Responsive>
   )
 }

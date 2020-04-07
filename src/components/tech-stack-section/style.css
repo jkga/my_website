@@ -16,3 +16,11 @@
   display: inline-block; /* Display icon as inline block */
   background-position: -340px 0px; /* Icon background position in sprite */
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .cert-sprite.itilv4 {
+    width: 340px;
+    margin-left: -45px;
+  }
+}

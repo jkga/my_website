@@ -4,10 +4,11 @@
 }
 
 .interests-sprite.arduino {
-  width: 460px; /* Icon width */
+  width: 350px; /* Icon width */
   height: 200px; /* Icon height */
   display: inline-block; /* Display icon as inline block */
   background-position: 0px 0px; /* Icon background position in sprite */
+  transform: scale(0.5);
 }
 
 
@@ -32,4 +33,23 @@
   display: inline-block; /* Display icon as inline block */
   background-position: -300px -200px; /* Icon background position in sprite */
 }
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .interest-divider {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .interest-divider {
+    display: none;
+  }
+  .interests-sprite.arduino {
+    width: 170px;
+    transform: scale(0.5);
+  }
+
+}
+
 
