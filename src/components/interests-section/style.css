@@ -3,12 +3,26 @@
   transform: scale(0.7);
 }
 
+.interests-sprite.display-list {
+  transform: scale(0.4);
+  margin-top: -50px;
+}
+
 .interests-sprite.arduino {
-  width: 350px; /* Icon width */
+  width: 450px; /* Icon width */
   height: 200px; /* Icon height */
   display: inline-block; /* Display icon as inline block */
   background-position: 0px 0px; /* Icon background position in sprite */
-  transform: scale(0.5);
+  transform: scale(0.45);
+}
+
+.interests-sprite.arduino.display-list {
+  width: 200px;
+  transform: scale(0.3);
+}
+
+.interests-sprite.guitar.display-list {
+  margin-left: -20px;
 }
 
 
@@ -35,9 +49,34 @@
 }
 
 
+@media (min-width: 768px) {
+  .interests-sprite.arduino.display-list {
+    width: 350px;
+    transform: scale(0.25);
+    margin-left: -80px;
+  }
+
+  .interests-sprite.arduino {
+
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .interests-sprite.arduino.display-list {
+    width: 350px;
+    transform: scale(0.5);
+  }
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   .interest-divider {
     display: none;
+  }
+
+  .interests-sprite.display-list {
+    margin: 0px;
+    transform: scale(0.7);
   }
 }
 
@@ -46,8 +85,13 @@
     display: none;
   }
   .interests-sprite.arduino {
-    width: 170px;
-    transform: scale(0.5);
+    width: 370px;
+    transform: scale(0.45);
+  }
+
+  .interests-sprite.display-list {
+    margin: 0px;
+    transform: scale(0.7);
   }
 
 }

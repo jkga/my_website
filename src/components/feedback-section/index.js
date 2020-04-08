@@ -17,7 +17,7 @@ export default () => {
             <p>Kenneth did a great job. He was excellent with communication and knowledge. <br/>One of the best experiences I've had with a freelancer on Upwork.</p>
             <footer>—Anonymous <cite>Upwork</cite></footer>
           </blockquote>
-          <Button as="a" color="red" href="https://www.upwork.com/freelancers/~018724209767272f28" target="_blank" rel="noopener">View profile</Button>
+          <Button    color="red" href="https://www.upwork.com/freelancers/~018724209767272f28" target="_blank" rel="noopener">View profile</Button>
         </Segment>
       </Container>
     </Container>
