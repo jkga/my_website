@@ -1,20 +1,42 @@
-import React from 'react'
-import { Header, Icon, Container, Image, Responsive } from 'semantic-ui-react'
+// eslint-disable-next-line
+import React, { useState, useEffect } from 'react'
+import { Header, Icon, Container, Image, Responsive, Transition } from 'semantic-ui-react'
 import RandomBars from '../random-bars'
 import Logo from './assets/img/logo.png'
 import './style.css'
 export default () => {
+  const [isLogoVisible, setLogoVisibility] = useState(false)
+
+  const bounce = (e) => {
+    if(e.target.scrollTop <= 20) {
+      setLogoVisibility(res => false)
+      setTimeout(() => setLogoVisibility(res => !res),100)  
+    } else {
+      setLogoVisibility(true)
+    }
+  }
+
+  useEffect(() => {
+    // animate bounce effect on scroll
+    setLogoVisibility(isLogoVisible => !isLogoVisible)
+    window.document.body.addEventListener('scroll', bounce, false)
+  }, [])
+
   return (
     <Responsive>
       <header>
         <Header as='h1' icon>
-          <Image src={Logo} style={{width: '40%', minWidth: '200px', marginBottom: '5vh' }} className='header-main-image'/>
+          <Transition.Group animation='bounce' duration={1000}>
+          {isLogoVisible && (
+              <Image centered src={Logo} style={{width: '40%', minWidth: '200px', marginBottom: '5vh' }} className='header-main-image'/>
+            )}
+          </Transition.Group>
           <Header.Subheader>
-            <b>Hola!</b>I am <span style={{color: '#e91e63'}}>Ken</span>, a fullstack web developer
-            working on various applications and information systems.<br/>
-            Thank you for spending your time visiting my humble website! Just keep scrolling, <br/>
-            don't worry I have a lot of things to tell you
-        </Header.Subheader>
+              <b>Hola!</b>I am <span style={{color: '#e91e63'}}>Ken</span>, a fullstack web developer
+              working on various applications and information systems.<br/>
+              Thank you for spending your time visiting my humble website! Just keep scrolling, <br/>
+              don't worry I have a lot of things to tell you
+          </Header.Subheader>
         </Header>
         <Container style={{margin: 10, opacity: 0.5}}>
             <Icon name='map marker alternate'/> Cabuyao, Laguna, Philippines
