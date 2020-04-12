@@ -1,21 +1,20 @@
 import React from 'react'
 import { Header, Icon, Container, Image, Responsive } from 'semantic-ui-react'
 import RandomBars from '../random-bars'
-import Motor from './assets/img/motor-2.jpg'
+import Logo from './assets/img/logo.png'
 import './style.css'
 export default () => {
   return (
     <Responsive>
       <header>
-        <Header as='h1' icon textAlign='center'>
-          <Image src={Motor} style={{width: 200}} className='header-main-image'/>
-            <Header.Content>.dev/jkga</Header.Content>
-            <Header.Subheader>
-              <b>Hola!</b> I am <span style={{color: '#e91e63'}}>Ken</span>, a fullstack web developer
-              working on various applications and information systems.<br/>
-              Thank you for spending your time visiting my humble website! Just keep scrolling, <br/>
-              don't worry I have a lot of things to tell you
-          </Header.Subheader>
+        <Header as='h1' icon>
+          <Image src={Logo} style={{width: '40%', minWidth: '200px', marginBottom: '5vh' }} className='header-main-image'/>
+          <Header.Subheader>
+            <b>Hola!</b>I am <span style={{color: '#e91e63'}}>Ken</span>, a fullstack web developer
+            working on various applications and information systems.<br/>
+            Thank you for spending your time visiting my humble website! Just keep scrolling, <br/>
+            don't worry I have a lot of things to tell you
+        </Header.Subheader>
         </Header>
         <Container style={{margin: 10, opacity: 0.5}}>
             <Icon name='map marker alternate'/> Cabuyao, Laguna, Philippines

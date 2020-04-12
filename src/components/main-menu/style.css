@@ -1,0 +1,47 @@
+.logo {
+  opacity: 0;
+  display: none;
+  transition: all 0.2s ease-in-out;
+  background: #fff !important;
+  z-index: 1;;
+}
+
+.main-menu-container {
+  background: #fff;
+}
+
+.main-menu {
+  top: -100;
+  transition: all 0.3s ease-in;
+}
+
+.main-menu.elevated {
+  position: fixed;
+  background: #fff !important;
+  top: 0;
+  right:0;
+  box-shadow: 0px 0px 10px rgb(200,200,200) !important;
+  z-index: 1000;
+  width: 100%;
+  float: left;
+  margin: 0 !important;
+  padding-left: 13% !important;
+  padding-right: 12% !important;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .main-menu.elevated {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .main-menu.elevated {
+    padding-left: 1% !important;
+  }
+  .logo {
+    z-index: 1;
+    background: #fff;
+  }
+}

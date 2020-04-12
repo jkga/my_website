@@ -13,7 +13,7 @@ header::after {
   left: -5%;
   right: 0%;
   width: 110%;
-  height: 700px;
+  height: 80vh;
   border-bottom: 1px solid rgba(60,60,60, 0.3);
   transform: rotate(-3deg);
   z-index: -1;
@@ -46,7 +46,7 @@ header::after {
 @media (min-width: 481px) and (max-width: 767px) {
   
   .header-x-backgound {
-    right: -5vh;
+    right: -8vh;
   }
 
   .header-arrow-forward-background {
@@ -56,7 +56,9 @@ header::after {
 
   .header-main-image {
     margin-top: 30px !important;
+    width: 70% !important;
   }
+
   
 }
 
@@ -84,7 +86,7 @@ header::after {
   }
 
   .header-main-image {
-    width: 150px !important;
+    width: 75% !important;
     margin-top: 30px !important;
   }
   

@@ -6,7 +6,7 @@ const interests = {
   'iot': {
     title: 'Internet of things (IOT)',
     spriteClass: 'interests-sprite arduino',
-    details: "During my free time, I used to make some cool stuff with my arduino and esp8266. With a cheap boards and micro-controllers, It's never been easier to control various electronic devices using our laptop or smart phone.",
+    details: "During my free time, I used to make some cool stuff with my arduino and esp8266. With a cheap board and micro-controller, It's never been easier to control various electronic devices using our laptop and smart phones.",
   },
   'foss': {
     title: 'Free and Open Source Software (FOSS)',
@@ -16,7 +16,7 @@ const interests = {
   'electronics': {
     title: 'Electronics',
     spriteClass: 'interests-sprite ne555',
-    details: "The technology we have today is a major upgrade of what we had from the past. An analog television, cassette tapes, and candles stick telephones are just a piece of artworks that you might have on your precious collection. But whats really interesting is the more it becomes older, the more the cooler it could be. And it is one of the thing I love on studying electronics. Do you think this 555 IC Timer is cool? Definitely!",
+    details: "The technology we have today is a major upgrade of what we had from the past. An analog television, cassette tapes, and candle stick telephones are just a piece of artworks that you might have on your precious collection. But whats really interesting is the more it becomes older, the more the cooler it could be. And it is one of the things I love on studying electronics. Do you think this 555 IC Timer is cool? Definitely!",
   },
   'music': {
     title: 'Music Rocks',

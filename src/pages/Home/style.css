@@ -27,5 +27,5 @@
 }
 
 .bg-sprite.half-circle.deg45 {
-  transform:rotate(-45deg) scale(0.35);
+  transform:rotate(-45deg) scale(0.4);
 }
