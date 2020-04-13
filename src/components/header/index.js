@@ -8,7 +8,7 @@ export default () => {
   const [isLogoVisible, setLogoVisibility] = useState(false)
 
   const bounce = (e) => {
-    if(e.target.scrollTop <= 20) {
+    if(e.target.scrollTop == 0) {
       setLogoVisibility(res => false)
       setTimeout(() => setLogoVisibility(res => !res),100)  
     } else {
