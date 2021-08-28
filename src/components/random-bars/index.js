@@ -7,7 +7,7 @@ export default () => {
 
   useEffect(() => {
     setInterval(() => {
-      let rand = Math.round(Math.random() * 30)
+      let rand = Math.round(Math.random() * 25)
       setBarHeight(rand)
     }, 700)
     
@@ -15,7 +15,7 @@ export default () => {
 
   const generateBars = () => {
     [...Array(10).keys()].forEach((el, index) => {
-      bars.push(<Bar class="bar" key={index} style={{height: barHeight + Math.round(Math.random() * 30) + 'px', background: '#e91e63'}}/>)
+      bars.push(<Bar class="bar" key={index} style={{height: barHeight + Math.round(Math.random() * 25) + 'px', background: '#e91e63'}}/>)
     })
   }
 

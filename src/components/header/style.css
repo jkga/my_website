@@ -1,11 +1,11 @@
 header {
   text-align: center;
-  height: 700px;
+  height: 90vh;
   padding: 5%;
   position: relative;
 }
 
-header::after {
+/*header::after {
   content: '';
   position: absolute;
   top: -5vh;
@@ -18,7 +18,7 @@ header::after {
   transform: rotate(-3deg);
   z-index: -1;
   overflow: hidden;
-}
+}*/
 
 /* icons */
 .header-x-backgound {
@@ -56,7 +56,7 @@ header::after {
 
   .header-main-image {
     margin-top: 30px !important;
-    width: 70% !important;
+    width: 20% !important;
   }
 
   
@@ -68,6 +68,10 @@ header::after {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  header {
+    padding-top: 0%;
+  }
   
   .header-half-circle-background {
     right: -28vh;
@@ -86,7 +90,7 @@ header::after {
   }
 
   .header-main-image {
-    width: 75% !important;
+    width: 30% !important;
     margin-top: 30px !important;
   }
   

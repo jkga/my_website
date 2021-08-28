@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Menu, Icon, Label, Container, Image } from 'semantic-ui-react'
-import Logo from '../header/assets/img/logo-green.png'
+import { Menu, Icon, Container, Image } from 'semantic-ui-react'
+import Logo from '../header/assets/img/profile.png'
 import './style.css'
 export default () => {
   const [activeItem, setActiveItem] = useState (null)
@@ -21,8 +21,8 @@ export default () => {
       <Container style={{minHeight: '100px'}} className='main-menu-container'>
         <Menu secondary style={{padding: '20px'}} className={isMenuElevated ? 'main-menu elevated': 'main-menu-container'}>
           <Menu.Menu position='left'>
-            <Menu.Item>
-              <Image as='a' href='/' src={Logo} width={100} style={{opacity: isMenuElevated ? 100 : 0, display: isMenuElevated ? 'block' : 'none' }} className='logo'/>
+            <Menu.Item style={{opacity: isMenuElevated ? 100 : 0, display: isMenuElevated ? 'block' : 'none' }} >
+              <Image as='a' href='/' src={Logo} width={50} style={{opacity: isMenuElevated ? 50 : 0, display: isMenuElevated ? 'block' : 'none', padding: 0 }} className='logo'/>
             </Menu.Item>
 
             { !isMenuElevated ?
@@ -46,11 +46,11 @@ export default () => {
               href='https://www.linkedin.com/in/kennethabella/'>
               <Icon name='linkedin alternate' size='large'/> LinkedIn
             </Menu.Item>
-            <Menu.Item>
+            {/*<Menu.Item>
               <Label as='a' color='black' tag>
                 &nbsp;Social
               </Label>
-            </Menu.Item>
+            </Menu.Item>*/}
           </Menu.Menu>
         </Menu>  
       </Container>
