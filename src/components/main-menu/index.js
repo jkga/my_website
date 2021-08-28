@@ -30,7 +30,7 @@ export default () => {
 
             { !isMenuElevated ?
               <Menu.Item
-                name='home' as='a' href='https://github.com/jkga'
+                name='home' as='a' href='/'
                 active={true}>
                 <Icon name='terminal' size='large'/> Home
               </Menu.Item> : undefined }

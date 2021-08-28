@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { Header, Icon, Container, Image, Responsive, Transition } from 'semantic-ui-react'
 import Logo from './assets/img/profile.png'
+import Scroll from './assets/img/scroll.gif'
 import bmcLogo from './assets/img/bmc-black-button.png'
 import './style.css'
 export default () => {
@@ -47,9 +48,14 @@ export default () => {
               don't worry I have a lot of things to tell you
           </Header.Subheader>
         </Header>
-        <Container>
-          
-        </Container>
+        
+        <Transition.Group animation='fly up' duration={1000}>
+        {isLogoVisible && (<Container textAlign="center" style={{opacity:0.5, color:'#ccc'}}>
+            <Image src={Scroll} centered width={50} style={{marginTop: '15vh', background: '#ccc', borderRadius: '20%'}}/>
+            <p>keep scrolling</p>
+          </Container>)}
+        </Transition.Group>
+
         <div className='bg-sprite x header-x-backgound'></div>
         <div className='bg-sprite arrow-forward header-arrow-forward-background'></div>
         <div className='bg-sprite half-circle deg45 header-half-circle-background'></div>

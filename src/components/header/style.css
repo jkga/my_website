@@ -38,7 +38,7 @@ header {
 .header-half-circle-background {
   position: absolute;
   top: 10vh;
-  right: -25vh;
+  right: -20vh;
   z-index: -1;
 }
 

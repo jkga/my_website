@@ -3,7 +3,7 @@ import { Header, Container, Divider } from 'semantic-ui-react'
 import Featured from './featured'
 export default () => {
   return (
-    <Container style={{marginTop: '10vh', marginBottom: '20vh'}}>
+    <Container style={{marginTop: '5vh', marginBottom: '15vh'}}>
       <Header as='h1' icon textAlign='center'>
         <Header.Content>Featured Videos</Header.Content>
         <Header.Subheader>
