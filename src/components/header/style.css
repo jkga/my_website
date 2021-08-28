@@ -5,6 +5,15 @@ header {
   position: relative;
 }
 
+.scroll-section {
+  position: absolute;
+  top: 75vh;
+  left: 45vw;
+  width: 10vw;
+  opacity:0.3;
+  color:'#ccc';
+}
+
 /*header::after {
   content: '';
   position: absolute;
@@ -38,7 +47,7 @@ header {
 .header-half-circle-background {
   position: absolute;
   top: 10vh;
-  right: -20vh;
+  right: -30vh;
   z-index: -1;
 }
 
@@ -57,6 +66,10 @@ header {
   .header-main-image {
     margin-top: 30px !important;
     width: 20% !important;
+  }
+
+  .scroll-section {
+    top: 75vh;
   }
 
   
@@ -93,6 +106,12 @@ header {
     width: 30% !important;
     margin-top: 30px !important;
   }
-  
+
+  .scroll-section {
+    top: 75vh;
+    width: 30vw;
+    left: 35vw;
+  }
+
 }
 

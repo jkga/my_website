@@ -28,10 +28,10 @@ export default () => {
       <header>
         <Transition.Group animation='pulse' duration={1000}>
           {isLogoVisible && (
-            <Image centered src={Logo} style={{width: '50px', minWidth: '250px', marginBottom: '5vh' }} className='header-main-image'/>
+            <Image centered src={Logo} style={{width: '50px', minWidth: '250px', marginTop: '-5vh' }} className='header-main-image'/>
           )}
         </Transition.Group>
-        <Container style={{margin: 10}}>
+        <Container>
           <Header as="h1">John Kenneth Abella</Header>
           <Header.Subheader Icon style={{ opacity: 0.5 }}><Icon name='map marker alternate'/>Cabuyao, Laguna, Philippines</Header.Subheader>
         </Container>
@@ -50,10 +50,10 @@ export default () => {
         </Header>
         
         <Transition.Group animation='fly up' duration={1000}>
-        {isLogoVisible && (<Container textAlign="center" style={{opacity:0.5, color:'#ccc'}}>
-            <Image src={Scroll} centered width={50} style={{marginTop: '15vh', background: '#ccc', borderRadius: '20%'}}/>
+        {isLogoVisible && (<div className="scroll-section">
+            <Image src={Scroll} centered width={50} style={{background: '#ccc', borderRadius: '20%'}}/>
             <p>keep scrolling</p>
-          </Container>)}
+          </div>)}
         </Transition.Group>
 
         <div className='bg-sprite x header-x-backgound'></div>
