@@ -44,4 +44,7 @@
     z-index: 1;
     background: #fff;
   }
+  .logo-alias-section {
+    display: none !important;
+  }
 }

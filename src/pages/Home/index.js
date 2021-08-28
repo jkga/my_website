@@ -16,11 +16,11 @@ export default () => {
       <Suspense fallback={<div>...</div>}>
         <HeaderMenu></HeaderMenu>
         <Header></Header>
+        <FeauturedVideo></FeauturedVideo>
         <TechStack></TechStack>
         <Certificate></Certificate>
         <Feedback></Feedback>
         <Interest></Interest>
-        <FeauturedVideo></FeauturedVideo>
       </Suspense>
     </Responsive>
   )

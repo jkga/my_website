@@ -25,16 +25,14 @@ export default () => {
   return (
     <Responsive>
       <header>
-        <Transition.Group animation='bounce' duration={1000}>
+        <Transition.Group animation='pulse' duration={1000}>
           {isLogoVisible && (
             <Image centered src={Logo} style={{width: '50px', minWidth: '250px', marginBottom: '5vh' }} className='header-main-image'/>
           )}
         </Transition.Group>
-        <Container style={{margin: 10, opacity: 0.5}}>
-          <Header>
-            <h1>John Kenneth Abella</h1>
-          </Header>
-          <Icon name='map marker alternate'/> Cabuyao, Laguna, Philippines
+        <Container style={{margin: 10}}>
+          <Header as="h1">John Kenneth Abella</Header>
+          <Header.Subheader Icon style={{ opacity: 0.5 }}><Icon name='map marker alternate'/>Cabuyao, Laguna, Philippines</Header.Subheader>
         </Container>
         <Container style={{marginTop:10}}>
           <a href='https://buymeacoffee.com/jkga' target='_blank' rel="noopener noreferrer">
