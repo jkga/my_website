@@ -1,5 +1,5 @@
 .interests-sprite {
-  background: url("assets/img/interests.png") no-repeat;
+  background: url("assets/img/interests2.png") no-repeat;
   transform: scale(0.7);
 }
 
@@ -52,7 +52,7 @@
 @media (min-width: 768px) {
   .interests-sprite.arduino.display-list {
     width: 350px;
-    transform: scale(0.25);
+    transform: scale(0.3);
     margin-left: -80px;
   }
 

@@ -86,12 +86,13 @@ export default () => {
   }
 
   return (
-    <Container style={{marginTop: '10vh'}}>
+    <Container style={{marginTop: '10vh', minHeight: '120vh'}}>
       <Header as='h1' icon textAlign='center'>
         <Header.Content>Interests</Header.Content>
         <Header.Subheader>
           <Divider horizontal>These are the <span style={{color: '#e91e63'}}>things I like to do/learn</span></Divider>
         </Header.Subheader>
+        <a id='interest-section'></a>
       </Header>
       <Container style={{display: 'flex', textAlign: 'center', justifyContent: 'center'}}>
         <Button.Group>

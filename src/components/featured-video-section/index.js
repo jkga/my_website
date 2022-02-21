@@ -9,6 +9,7 @@ export default () => {
         <Header.Subheader>
           <Divider horizontal>Sample videos related to my <span style={{color: '#e91e63'}}>projects</span></Divider>
         </Header.Subheader>
+        <a id='video-section'></a>
       </Header>
       <Container style={{display: 'flex', textAlign: 'center', justifyContent: 'center', margin: 100}}>
         <Featured/>

@@ -14,6 +14,10 @@ header {
   color:'#ccc';
 }
 
+.header-grid {
+  margin-top: 15vh !important;
+}
+
 /*header::after {
   content: '';
   position: absolute;
@@ -72,6 +76,14 @@ header {
     top: 75vh;
   }
 
+  .sm-text-centered {
+    text-align: center !important;
+  }
+
+  .header-grid {
+    margin-top: 0vh !important;
+  }
+  
   
 }
 
@@ -114,4 +126,17 @@ header {
   }
 
 }
+
+@media(max-width: 767px) {
+  .sm-hidden {
+    display: none !important;
+  }
+}
+
+@media(min-width: 768px) {
+  .m-hidden {
+    display: none !important;
+  }
+}
+
 

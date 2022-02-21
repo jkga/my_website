@@ -5,6 +5,7 @@ import './style.css'
 export default () => {
   return (
     <Container style={{marginTop: 150}}>
+      <a id='certificate-section'></a>
       <Header as='h1' icon textAlign='center'>
         <Header.Content>Certificates</Header.Content>
       </Header>

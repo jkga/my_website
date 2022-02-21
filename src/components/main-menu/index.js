@@ -31,11 +31,11 @@ export default () => {
             { !isMenuElevated ?
               <Menu.Item
                 name='home' as='a' href='/'
-                active={true}>
+                active={true} style={{backgroundColor: '#262626', color: '#fff'}}>
                 <Icon name='terminal' size='large'/> Home
               </Menu.Item> : undefined }
           </Menu.Menu>
-          <Menu.Menu position='right'>
+          <Menu.Menu>
             <Menu.Item
               name='github' as='a' href='https://github.com/jkga'
               active={activeItem === 'github'}>
@@ -49,11 +49,31 @@ export default () => {
               href='https://www.linkedin.com/in/kennethabella/'>
               <Icon name='linkedin alternate' size='large'/> LinkedIn
             </Menu.Item>
-            {/*<Menu.Item>
-              <Label as='a' color='black' tag>
-                &nbsp;Social
-              </Label>
-            </Menu.Item>*/}
+          </Menu.Menu>
+          <Menu.Menu position='right' className='sm-hidden'>
+            <Menu.Item
+              name='github' as='a' href='#interest-section'
+              active={activeItem === 'github'}>
+              Interests
+            </Menu.Item>
+            <Menu.Item
+              name='github' as='a' href='#video-section'
+              active={activeItem === 'github'}>
+              <Icon name={'video play'}/> Videos
+            </Menu.Item>
+            <Menu.Item
+              name='github' as='a' href='#certificate-section'
+              active={activeItem === 'github'}>
+              Certificates &amp; Awards
+            </Menu.Item>
+            <Menu.Item
+              name='LinkedIn'
+              active={activeItem === 'messages'}
+              onClick={handleItemClick}
+              as='a'
+              href='#feedback-section'>
+              Feedback
+            </Menu.Item>
           </Menu.Menu>
         </Menu>  
       </Container>
