@@ -21,7 +21,7 @@ export default () => {
               <Label as='a' size='mini' color='teal'>@2020</Label>
             </Header>
             <div className='cert-sprite itilv4'></div>
-            <p>
+            <p style={{textAlign: 'justify'}}>
               <span style={{color: 'rgb(0, 150, 136)'}}>ITIL 4 brings the ITIL framework </span>
               up to date, introducing a holistic approach to service management and focusing on 'end-to-end service management from demand to value'.
               The new edition of ITIL 4 is the first major update to ITIL since 2007 and is arguably a response to the emergence of newer service management frameworks such as VeriSM™, SIAM® and FitSM. It expands the previous version of ITIL V3 ('ITIL 2011') and provides a flexible basis to support organizations on their journey to the new world of digital transformation.<br/><br/>
@@ -40,7 +40,7 @@ export default () => {
               <Label as='a' size='mini' color='teal'>@2011</Label>
             </Header>
             <Image src={Tesda} centered style={{width: 150, padding: 20}}/>
-            <p>
+            <p style={{textAlign: 'justify'}}>
             <span style={{color: 'rgb(0, 150, 136)'}}>This certification / course</span> is designed
             to develop knowledge, skills and attitudes of a Computer Service Technician in accordance with 
             the industry standards. It covers basic and common competencies such as installing, configuring and diagnosing

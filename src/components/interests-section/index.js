@@ -41,7 +41,7 @@ export default () => {
     for(let [key, interest] of Object.entries(interests)) {
       interestNodes.push(<Grid.Column key={key}>
         <div className={interest.spriteClass}/>
-      <p>
+      <p style={{textAlign: 'justify'}}>
         <span style={{color: 'rgb(0, 150, 136)'}}>{interest.title}.&nbsp;</span> 
         {interest.details}
       </p>
@@ -86,7 +86,7 @@ export default () => {
   }
 
   return (
-    <Container style={{marginTop: '10vh', minHeight: '120vh'}}>
+    <Container style={{marginTop: '10vh', minHeight: '110vh'}}>
       <Header as='h1' icon textAlign='center'>
         <Header.Content>Interests</Header.Content>
         <Header.Subheader>

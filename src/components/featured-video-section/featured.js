@@ -42,6 +42,17 @@ export default () => {
           <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Introducing &quot;ME&quot; ! <br/>A next-gen JAMSTACK template for developers that leverage the use of JSON Resume in creating a web based vitae and portfolio.<br/><br/>{ <a href="https://twitter.com/jkga06?ref_src=twsrc%5Etfw">@jkga06</a> } <a href="https://twitter.com/hashtag/DEVCommunity?src=hash&amp;ref_src=twsrc%5Etfw">#DEVCommunity</a> <a href="https://t.co/qMLr761z0B">https://t.co/qMLr761z0B</a></p>&mdash; DEV Community 👩‍💻👨‍💻 (@ThePracticalDev) <a href="https://twitter.com/ThePracticalDev/status/1254417498977550341?ref_src=twsrc%5Etfw">April 26, 2020</a></blockquote>
         </Segment>
       </Grid.Column>
+      <Grid.Column>
+        <Segment>
+          <Header>
+            L.O.V.E
+            <Header.Subheader>LED Multiplexing using Arduino and SN74HC192N</Header.Subheader>
+          </Header>
+          <Suspense fallback={<></>}>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F0a92fab3230134cca6eadd9898325b9b2ae67998%2Fvideos%2F246394514347255%2F&show_text=true&width=560&t=0" width="100%" height="381" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy"></iframe>
+          </Suspense>
+        </Segment>
+      </Grid.Column>
     </Grid>
   )
 }
