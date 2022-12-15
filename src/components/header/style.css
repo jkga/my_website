@@ -15,7 +15,7 @@ header {
 }
 
 .header-grid {
-  margin-top: 15vh !important;
+  margin-top: 10vh !important;
 }
 
 /*header::after {
@@ -81,7 +81,7 @@ header {
   }
 
   .header-grid {
-    margin-top: 0vh !important;
+    margin-top: 15vh !important;
   }
   
   
