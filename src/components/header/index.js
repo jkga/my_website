@@ -1,8 +1,9 @@
 // eslint-disable-next-line
 import React, { useState, useEffect } from 'react'
-import { Header, Icon, Image, Responsive, Transition, Grid, Button } from 'semantic-ui-react'
+import { Header, Icon, Image, Responsive, Transition, Grid, Button, Container } from 'semantic-ui-react'
 import Logo from './assets/img/profile.png'
 import LogoHalf from './assets/img/profile-half.png'
+import Name from './assets/img/name.png'
 import './style.css'
 export default () => {
   const [isLogoVisible, setLogoVisibility] = useState(false)
@@ -24,40 +25,39 @@ export default () => {
 
   return (
     <Responsive>
-      <header style={{minWidth: '100%'}}>
-        <Grid stackable className='header-grid'>
-          {/*<Grid.Column textAlign='center' className='m-hidden'>
-              <Transition.Group animation='pulse' duration={1000}>
-                {isLogoVisible && (
-                  <Image centered src={Logo} style={{width: '50px', minWidth: '250px'}} className='header-main-image'/>
-                )}
+      <header style={{minWidth: '100%', height: 'auto'}}>
+        <Grid stackable style={{marginBottom: '5em'}}>
+          <Grid.Column>
+            <Container style={{paddingLeft: '15%', paddingRight: '15%', textAlign: 'left'}}>
+              <Transition.Group animation='pulse' duration={2000}>
+                {isLogoVisible && <Image src={Name} centered style={{width: 350}}/> }
               </Transition.Group>
-            </Grid.Column>*/}
-          
-          <Grid.Column textAlign='center' verticalAlign='center' className='sm-text-centered'>
-            <Header style={{fontSize: '2.8em'}}>John Kenneth Abella</Header>
-            <Header.Subheader Icon style={{ opacity: 0.5 }}><Icon name='map marker alternate'/>Cabuyao, Laguna, Philippines</Header.Subheader>
-            <Header.Subheader>
-              I am <span style={{color: '#e91e63'}}>fullstack web developer&nbsp;</span>
-              working on various applications and information systems.<br/>
-              Thank you for spending your time visiting my humble website! Just keep scrolling, <br/>
-              don't worry I have a lot of things to tell you
-            </Header.Subheader><br/>
-            
-            <Transition.Group animation='pulse' duration={1000}>
-              {isLogoVisible && <Button color='teal' style={{background:'#63976E', borderRadius: 30}} size='large' onClick={()=> window.location = 'https://www.linkedin.com/in/kennethabella/'}>
-                  <Grid relaxed>
-                    <Grid.Column width={5} textAlign='right' verticalAlign='center' className='text-centered'>
-                      <Image right src={Logo} style={{width: '100px'}}/>
-                    </Grid.Column>
-                    <Grid.Column width={11}  textAlign='left' verticalAlign='center' className='text-left' style={{paddingLeft: 0}}>
-                      <div style={{paddingTop: '8px', marginLeft: '-20px'}}>CONTACT ME</div>
-                    </Grid.Column>
-                  </Grid>
-                </Button>
-              }
-            </Transition.Group>
+              <Header style={{fontSize: '2.8em'}} textAlign='center'>John Kenneth Abella</Header>
+              <Header.Subheader style={{ opacity: 0.5, textAlign: 'center' }}><Icon name='map marker alternate'/>Cabuyao, Laguna, Philippines</Header.Subheader>
+              <br/>
+              <p style={{textAlign: 'justify'}}>
+                I am a <span style={{color: '#e91e63'}}>fullstack web developer&nbsp;</span>
+                working on various applications and information systems.
+                I am actively collaborates on free and open-source projects by various organizations and 
+                independent teams such as Google Developers Group &#40;GDGPH&#41;, TrackerCLI, 
+                and many more. Prior to my engagement with SEARCA, I was an IT 
+                Instructor/Coordinator at the Philippine Women&#39;s University Calamba and a former 
+                trainee at the University of the Philippines Los Baños - Information Technology Center
+              </p>
+
+              <Container textAlign='center'>
+                <Transition.Group animation='pulse' duration={1000}>
+                  {isLogoVisible && <Button size="huge" color='teal' style={{background:'#63976E', borderRadius: 30}} onClick={()=> window.location = 'https://www.linkedin.com/in/kennethabella/'}>
+                  CONTACT ME
+                    </Button>
+                  }
+                </Transition.Group>
+              </Container>
+
+            </Container>
           </Grid.Column>
+
+
         </Grid>
       </header>
     </Responsive>
