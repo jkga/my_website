@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { Header, Icon, Image, Responsive, Transition, Grid, Button, Container } from 'semantic-ui-react'
 import Logo from './assets/img/profile.png'
 import LogoHalf from './assets/img/profile-half.png'
-import Name from './assets/img/name.png'
+import Name from './assets/img/hex.png'
 import './style.css'
 export default () => {
   const [isLogoVisible, setLogoVisibility] = useState(false)
@@ -30,9 +30,9 @@ export default () => {
           <Grid.Column>
             <Container style={{paddingLeft: '15%', paddingRight: '15%', textAlign: 'left'}}>
               <Transition.Group animation='pulse' duration={2000}>
-                {isLogoVisible && <Image src={Name} centered style={{width: 350}}/> }
+                {isLogoVisible && <Image src={Name} centered style={{width: '85%', minWidth: 250, marginTop: 20}}/> }
               </Transition.Group>
-              <Header style={{fontSize: '2.8em'}} textAlign='center'>John Kenneth Abella</Header>
+              <Header style={{fontSize: '2em'}} textAlign='center'>John Kenneth Abella</Header>
               <Header.Subheader style={{ opacity: 0.5, textAlign: 'center' }}><Icon name='map marker alternate'/>Cabuyao, Laguna, Philippines</Header.Subheader>
               <br/>
               <p style={{textAlign: 'justify'}}>
